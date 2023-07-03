@@ -1,0 +1,63 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Config" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Config">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Label" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="XML" type="xs:string" minOccurs="0" />
+                <xs:element name="KeyValue" type="xs:string" minOccurs="0" />
+                <xs:element name="QueryJoin" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Config>
+    <Name>id_fun</Name>
+    <Label>Id Fun</Label>
+    <Type>PrimaryKey</Type>
+    <XML>&lt;input type="text" class="form-control" maxlength="0" data-bind="value: id_fun" data-rule-required="true" data-msg-required=""&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+  <Config>
+    <Name>id_pes</Name>
+    <Label>Pessoa</Label>
+    <Type>SQL (Dropdown)</Type>
+    <XML>&lt;?php echo JHtmlPlus::SelectClientes('id_pes','id_pes', 'Selecione...')?&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+  <Config>
+    <Name>id_crg</Name>
+    <Label>Cargo</Label>
+    <Type>SQL (Dropdown)</Type>
+    <XML>&lt;?php echo JHtmlPlus::SelectCargos('id_crg','id_crg', 'Selecione...')?&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+  <Config>
+    <Name>atendente_fun</Name>
+    <Label>Atendente</Label>
+    <Type>CheckBox</Type>
+    <XML>&lt;?php echo JHtmlPlus::BooleanControl('atendente_fun'); ?&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+  <Config>
+    <Name>promotor_fun</Name>
+    <Label>Promotor</Label>
+    <Type>CheckBox</Type>
+    <XML>&lt;?php echo JHtmlPlus::BooleanControl('promotor_fun'); ?&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+</NewDataSet>

@@ -1,0 +1,39 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Config" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Config">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Label" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="XML" type="xs:string" minOccurs="0" />
+                <xs:element name="KeyValue" type="xs:string" minOccurs="0" />
+                <xs:element name="QueryJoin" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Config>
+    <Name>user_id</Name>
+    <Label>User Id</Label>
+    <Type>PrimaryKey</Type>
+    <XML>&lt;input type="text" class="form-control" maxlength="0" data-bind="value: user_id" data-rule-required="true" data-msg-required=""&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+  <Config>
+    <Name>group_id</Name>
+    <Label>Group Id</Label>
+    <Type>PrimaryKey</Type>
+    <XML>&lt;input type="text" class="form-control" maxlength="0" data-bind="value: group_id" data-rule-required="true" data-msg-required=""&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+</NewDataSet>

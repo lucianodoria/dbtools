@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension method="{Method}" type="{Type}" version="3">
+  <name>{NameExtension}</name>
+  <author>Doria TI</author>
+  <creationDate>{CreationDate}</creationDate>
+  <copyright>(C) {CopyrightAno}</copyright>
+  <license>Comercial</license>
+  <authorEmail>contato@doriati.com.br</authorEmail>
+  <authorUrl>www.doriati.com.br</authorUrl>
+  <version>{Version}</version>
+  <description>{NameExtensionUpperCase}_XML_DESCRIPTION</description>
+  <!-- Runs on install/uninstall/update -->
+  <scriptfile>script.php</scriptfile>
+  <!-- Install / Uninstall Database Section -->
+  {Scripts}
+  <!-- Frontend -->
+  <files folder="site">
+    {FilesFolderSite}
+  </files>
+  <languages folder="site/language/pt-BR">
+    {LanguagesSite}
+  </languages>
+  <!-- Backend -->
+  <administration>
+    {Menu}
+    <submenu>
+      {SubMenus}
+    </submenu>
+    <languages folder="admin/language/pt-BR">
+      {LanguagesAdmin}
+    </languages>
+    <files folder="admin">
+      {FilesFolderAdmin}
+    </files>
+  </administration>
+</extension>

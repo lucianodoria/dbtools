@@ -1,0 +1,183 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Config" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Config">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Label" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="XML" type="xs:string" minOccurs="0" />
+                <xs:element name="KeyValue" type="xs:string" minOccurs="0" />
+                <xs:element name="QueryJoin" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Config>
+    <Name>id_pes</Name>
+    <Label>Id Pes</Label>
+    <Type>PrimaryKey</Type>
+    <XML>&lt;input type="text" class="form-control" maxlength="0" data-bind="value: id_pes" data-rule-required="true" data-msg-required=""&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+  <Config>
+    <Name>id_hot</Name>
+    <Label>Hotel</Label>
+    <Type>SQL (Dropdown)</Type>
+    <XML>&lt;?php echo JHtmlPlus::SelectHotel('id_hot','id_hot', 'Selecione...')?&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+  <Config>
+    <Name>id_pest</Name>
+    <Label>Tipo Pessoa</Label>
+    <Type>SQL (Dropdown)</Type>
+    <XML>&lt;?php echo JHtmlPlus::SelectTipoPessoa('id_pest','id_pest', 'Selecione...')?&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+  <Config>
+    <Name>id_tsx</Name>
+    <Label>Sexo</Label>
+    <Type>SQL (Dropdown)</Type>
+    <XML>&lt;?php echo JHtmlPlus::SelectTipoSexo('id_tsx','id_tsx', 'Selecione...')?&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+  <Config>
+    <Name>nome_razao_social_pes</Name>
+    <Label>Nome razão social</Label>
+    <Type>Text</Type>
+    <XML>&lt;?php echo JHtmlPlus::TextBoxControl('nome_razao_social_pes',150, null, null, null, true, "Informe a Nome razão social!")?&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+  <Config>
+    <Name>nome_fantasia_pes</Name>
+    <Label>Nome fantasia</Label>
+    <Type>Text</Type>
+    <XML>&lt;?php echo JHtmlPlus::TextBoxControl('nome_fantasia_pes',150, null, null, null, false, "")?&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+  <Config>
+    <Name>nome_abreviado_pes</Name>
+    <Label>Nome abreviado</Label>
+    <Type>Text</Type>
+    <XML>&lt;?php echo JHtmlPlus::TextBoxControl('nome_abreviado_pes',30, null, null, null, false, "")?&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+  <Config>
+    <Name>cpf_cnpj_pes</Name>
+    <Label>CPF/CNPJ</Label>
+    <Type>Text</Type>
+    <XML>&lt;?php echo JHtmlPlus::TextBoxControl('cpf_cnpj_pes',15, null, null, null, false, "")?&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+  <Config>
+    <Name>id_tpd</Name>
+    <Label>Tipo documento</Label>
+    <Type>SQL (Dropdown)</Type>
+    <XML>&lt;?php echo JHtmlPlus::SelectTipoDocumento('id_tpd','id_tpd', 'Selecione...')?&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+  <Config>
+    <Name>numero_documento_pes</Name>
+    <Label>Número documento</Label>
+    <Type>Text</Type>
+    <XML>&lt;?php echo JHtmlPlus::TextBoxControl('numero_documento_pes',100, null, null, null, false, "")?&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+  <Config>
+    <Name>orgao_expeditor_pes</Name>
+    <Label>Orgão expeditor</Label>
+    <Type>Text</Type>
+    <XML>&lt;?php echo JHtmlPlus::TextBoxControl('orgao_expeditor_pes',100, null, null, null, false, "")?&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+  <Config>
+    <Name>inscricao_municipal_pes</Name>
+    <Label>Inscrição municipal</Label>
+    <Type>Text</Type>
+    <XML>&lt;?php echo JHtmlPlus::TextBoxControl('inscricao_municipal_pes',20, null, null, null, false, "")?&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+  <Config>
+    <Name>data_nascimento_pes</Name>
+    <Label>Data nascimento</Label>
+    <Type>Datepicker</Type>
+    <XML>&lt;?php echo JHtmlPlus::DatepickerControl('data_nascimento_pes');?&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+  <Config>
+    <Name>nacionalidade_pes</Name>
+    <Label>Nacionalidade</Label>
+    <Type>Text</Type>
+    <XML>&lt;?php echo JHtmlPlus::TextBoxControl('nacionalidade_pes',100, null, null, null, false, "")?&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+  <Config>
+    <Name>naturalidade_pes</Name>
+    <Label>Naturalidade</Label>
+    <Type>Text</Type>
+    <XML>&lt;?php echo JHtmlPlus::TextBoxControl('naturalidade_pes',100, null, null, null, false, "")?&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+  <Config>
+    <Name>observacoes_pes</Name>
+    <Label>Observações</Label>
+    <Type>Text</Type>
+    <XML>&lt;?php echo JHtmlPlus::TextBoxControl('observacoes_pes',500, null, null, null, false, "")?&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+  <Config>
+    <Name>id_user_associado</Name>
+    <Label>Usuário associado</Label>
+    <Type>SQL (Dropdown)</Type>
+    <XML>&lt;?php echo JHtmlPlus::SelectUsuarios('id_user_associado','id_user_associado', 'Selecione...')?&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+  <Config>
+    <Name>id_user_cadastro</Name>
+    <Label>Usuário cadastro</Label>
+    <Type>SQL (Dropdown)</Type>
+    <XML>&lt;?php echo JHtmlPlus::SelectUsuarios('id_user_cadastro','id_user_cadastro', 'Selecione...')?&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+  <Config>
+    <Name>data_cadastro_pes</Name>
+    <Label>Data cadastro</Label>
+    <Type>Datepicker</Type>
+    <XML>&lt;?php echo JHtmlPlus::DatepickerControl('data_cadastro_pes');?&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+  <Config>
+    <Name>published</Name>
+    <Label>Ativo</Label>
+    <Type>CheckBox</Type>
+    <XML>&lt;?php echo JHtmlPlus::BooleanControl('published'); ?&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+</NewDataSet>

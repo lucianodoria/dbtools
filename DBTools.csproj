@@ -1,0 +1,1116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1A6E1B1D-3904-49AC-835D-E5324F41E715}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>DBTools.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>DBTools</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DBTools</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>DBTools.Program</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>725BDC613191AFA31CE2C065F73790497876E0D6</ManifestCertificateThumbprint>
+    <ManifestKeyFile>DBTools_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>false</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>pt-BR</TargetCulture>
+    <ProductName>DBTools</ProductName>
+    <PublisherName>Luciano Dória</PublisherName>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.43</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+    <BootstrapperComponentsUrl>http://alemanha/DBTools/Framework 2.0.exe</BootstrapperComponentsUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.9.0.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <HintPath>packages\Portable.BouncyCastle.1.9.0\lib\net40\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="CodeIntellects.Office2003Controls, Version=1.0.2519.15888, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Help_Desk_NET\bin\Release\CodeIntellects.Office2003Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Crom.Controls.Docking">
+      <HintPath>Libs\Crom.Controls.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="DatePickerPlus, Version=1.0.3027.29099, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Help_Desk_NET\bin\Release\DatePickerPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="DLLFuncoes, Version=1.0.1652.29251, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Help_Desk_NET\bin\Release\DLLFuncoes.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Fireball.CodeEditor, Version=2.0.0.46, Culture=neutral, PublicKeyToken=f84d0e3f884fb1e4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Downloads\Desktop Development\Edit Controls\Fireball.CodeEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Fireball.CodeEditor.SyntaxFiles, Version=2.0.0.46, Culture=neutral, PublicKeyToken=f84d0e3f884fb1e4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Downloads\Desktop Development\Edit Controls\Fireball.CodeEditor.SyntaxFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="Fireball.SyntaxDocument, Version=2.0.0.46, Culture=neutral, PublicKeyToken=f84d0e3f884fb1e4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Downloads\Desktop Development\Edit Controls\Fireball.SyntaxDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="Fireball.Windows.Forms, Version=2.0.0.46, Culture=neutral, PublicKeyToken=f84d0e3f884fb1e4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Downloads\Desktop Development\Edit Controls\Fireball.Windows.Forms.DLL</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.21.8.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>packages\Google.Protobuf.3.21.8\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.2.16.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>packages\K4os.Compression.LZ4.1.2.16\lib\net46\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.2.16.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>packages\K4os.Compression.LZ4.Streams.1.2.16\lib\net46\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.7.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>packages\K4os.Hash.xxHash.1.0.7\lib\net46\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="LDChartControlPlus, Version=1.0.3162.28065, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LDChartControlPlus\bin\Release\LDChartControlPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="LDControls, Version=1.0.3154.29299, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LDControls\bin\Release\LDControls.dll</HintPath>
+    </Reference>
+    <Reference Include="LucianoDoria.Forms.ListViewPlus, Version=1.0.3895.29496, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\LucianoDoria.Forms.ListViewPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=14.100.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Unofficial.Sql.Server.Management.Objects.17.4.1\lib\Microsoft.SqlServer.ConnectionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.ConnectionInfoExtended, Version=14.100.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Unofficial.Sql.Server.Management.Objects.17.4.1\lib\Microsoft.SqlServer.ConnectionInfoExtended.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Management.Sdk.Sfc, Version=14.100.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Unofficial.Sql.Server.Management.Objects.17.4.1\lib\Microsoft.SqlServer.Management.Sdk.Sfc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.RegSvrEnum, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft SQL Server\120\SDK\Assemblies\Microsoft.SqlServer.RegSvrEnum.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.ServiceBrokerEnum, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft SQL Server\120\SDK\Assemblies\Microsoft.SqlServer.ServiceBrokerEnum.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Smo, Version=14.100.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Unofficial.Sql.Server.Management.Objects.17.4.1\lib\Microsoft.SqlServer.Smo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SmoExtended, Version=14.100.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Unofficial.Sql.Server.Management.Objects.17.4.1\lib\Microsoft.SqlServer.SmoExtended.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SqlClrProvider, Version=14.100.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Unofficial.Sql.Server.Management.Objects.17.4.1\lib\Microsoft.SqlServer.SqlClrProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SqlEnum, Version=14.100.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Unofficial.Sql.Server.Management.Objects.17.4.1\lib\Microsoft.SqlServer.SqlEnum.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.WmiEnum, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft SQL Server\120\SDK\Assemblies\Microsoft.SqlServer.WmiEnum.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualC">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MlkPwgen, Version=0.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\MlkPwgen.0.3.0\lib\net45\MlkPwgen.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.31.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>packages\MySql.Data.8.0.31\lib\net48\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.10.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>packages\MySql.Data.Entity.6.10.9\lib\net452\MySql.Data.Entity.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="MySqlBackup, Version=2.3.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\MySqlBackup.NET.2.3.7\lib\net48\MySqlBackup.dll</HintPath>
+    </Reference>
+    <Reference Include="Renci.SshNet, Version=2020.0.2.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>packages\SSH.NET.2020.0.2\lib\net40\Renci.SshNet.dll</HintPath>
+    </Reference>
+    <Reference Include="ScintillaNet, Version=2.0.3138.25704, Culture=neutral, PublicKeyToken=948d6c9751444115, processorArchitecture=MSIL" />
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="ZstdNet, Version=1.4.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>packages\MySql.Data.8.0.31\lib\net48\ZstdNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="classes\Field.cs" />
+    <Compile Include="classes\JoomlaXMLToScript.cs" />
+    <Compile Include="classes\Joomla.cs" />
+    <Compile Include="classes\ZipClass.cs" />
+    <Compile Include="clsConexao.cs" />
+    <Compile Include="forms\frmAPIWiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmAPIWiz.Designer.cs">
+      <DependentUpon>frmAPIWiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmJoomlaPacoteInstalacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmJoomlaPacoteInstalacao.Designer.cs">
+      <DependentUpon>frmJoomlaPacoteInstalacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmJoomlaXMLToScript.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmJoomlaXMLToScript.Designer.cs">
+      <DependentUpon>frmJoomlaXMLToScript.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmComando.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmComando.Designer.cs">
+      <DependentUpon>frmComando.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExecSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowExcelSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowExcelSelection.designer.cs">
+      <DependentUpon>frmShowExcelSelection.cs</DependentUpon>
+    </Compile>
+    <Content Include="App.ico" />
+    <Content Include="DBTools.ico" />
+    <Content Include="Imagens\icons auto complete\bkp\row.ico" />
+    <Content Include="Imagens\icons auto complete\bkp\sp.ico" />
+    <Content Include="Imagens\icons auto complete\bkp\sp_row.ico" />
+    <Content Include="Imagens\icons auto complete\bkp\table.ico" />
+    <Content Include="Imagens\icons auto complete\bkp\view.ico" />
+    <Content Include="Imagens\icons auto complete\row.bmp" />
+    <Content Include="Imagens\icons auto complete\row.ico" />
+    <Content Include="Imagens\icons auto complete\sp.bmp" />
+    <Content Include="Imagens\icons auto complete\sp.ico" />
+    <Content Include="Imagens\icons auto complete\sp_row.bmp" />
+    <Content Include="Imagens\icons auto complete\sp_row.ico" />
+    <Content Include="Imagens\icons auto complete\table.bmp" />
+    <Content Include="Imagens\icons auto complete\table.ico" />
+    <Content Include="Imagens\icons auto complete\view.bmp" />
+    <Content Include="Imagens\icons auto complete\view.ico" />
+    <Content Include="Imagens\Logo_SQLServer.PNG" />
+    <Content Include="Libs\CodeIntellects.Office2003Controls.dll" />
+    <Content Include="Libs\Crom.Controls.Docking.dll" />
+    <Content Include="Libs\DatePickerPlus.dll" />
+    <Content Include="Libs\DLLFuncoes.dll" />
+    <Content Include="Libs\Fireball.CodeEditor.dll" />
+    <Content Include="Libs\Fireball.CodeEditor.SyntaxFiles.dll" />
+    <Content Include="Libs\Fireball.Core.dll" />
+    <Content Include="Libs\Fireball.SyntaxDocument.dll" />
+    <Content Include="Libs\Fireball.Win32.dll" />
+    <Content Include="Libs\Fireball.Windows.Forms.DLL" />
+    <Content Include="Libs\Interop.Excel.dll" />
+    <Content Include="Libs\LDChartControlPlus.dll" />
+    <Content Include="Libs\LDControls.dll" />
+    <Content Include="Libs\LucianoDoria.Forms.ListViewPlus.dll" />
+    <Content Include="Libs\Microsoft.Office.Interop.Excel.dll" />
+    <Content Include="Libs\Microsoft.ReportingServices.Interfaces.dll" />
+    <Content Include="Libs\Microsoft.SqlServer.ConnectionInfo.dll" />
+    <Content Include="Libs\Microsoft.SqlServer.ConnectionInfoExtended.dll" />
+    <Content Include="Libs\Microsoft.SqlServer.Dmf.Adapters.dll" />
+    <Content Include="Libs\Microsoft.SqlServer.Dmf.dll" />
+    <Content Include="Libs\Microsoft.SqlServer.DmfSqlClrWrapper.dll" />
+    <Content Include="Libs\Microsoft.SqlServer.Management.Collector.dll" />
+    <Content Include="Libs\Microsoft.SqlServer.Management.CollectorEnum.dll" />
+    <Content Include="Libs\Microsoft.SqlServer.Management.Sdk.Sfc.dll" />
+    <Content Include="Libs\Microsoft.SqlServer.Management.Utility.dll" />
+    <Content Include="Libs\Microsoft.SqlServer.Management.UtilityEnum.dll" />
+    <Content Include="Libs\Microsoft.SqlServer.PolicyEnum.dll" />
+    <Content Include="Libs\Microsoft.SqlServer.RegSvrEnum.dll" />
+    <Content Include="Libs\Microsoft.SqlServer.Rmo.dll" />
+    <Content Include="Libs\Microsoft.SqlServer.ScriptTask.dll" />
+    <Content Include="Libs\Microsoft.SqlServer.ServiceBrokerEnum.dll" />
+    <Content Include="Libs\Microsoft.SqlServer.Smo.dll" />
+    <Content Include="Libs\Microsoft.SqlServer.SmoEnum.dll" />
+    <Content Include="Libs\Microsoft.SqlServer.SmoExtended.dll" />
+    <Content Include="Libs\Microsoft.SqlServer.SqlEnum.dll" />
+    <Content Include="Libs\Microsoft.SqlServer.SqlWmiManagement.dll" />
+    <Content Include="Libs\Microsoft.SqlServer.SString.dll" />
+    <Content Include="Libs\Microsoft.SqlServer.TxScript.dll" />
+    <Content Include="Libs\Microsoft.SqlServer.VSTAScriptingLib.dll" />
+    <Content Include="Libs\Microsoft.SqlServer.WmiEnum.dll" />
+    <Content Include="Libs\Microsoft.Vbe.Interop.dll" />
+    <Content Include="Libs\Microsoft.VisualC.dll" />
+    <Content Include="Libs\MySql.Data.dll" />
+    <Content Include="Libs\SciLexer.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\Scintilla.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\ScintillaNet.dll" />
+    <Content Include="Libs\System.Windows.Forms.DataVisualization.dll" />
+    <Content Include="logo.ico" />
+    <Content Include="Templates\index.html" />
+    <Content Include="Templates\install.mysql.utf8.sql" />
+    <Content Include="Templates\joomla_knockout\admin\component_doriaconcursos\assets\js\ViewModels\ViewModel\ViewModel.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_doriaconcursos\business\business.php" />
+    <Content Include="Templates\joomla_knockout\admin\component_doriaconcursos\business\businessBasic.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_doriaconcursos\controllers\controllers.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_doriaconcursos\entity\entity.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_doriaconcursos\entity\filter\filter.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_doriaconcursos\tables\table.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_doriaconcursos\views\view\index.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_doriaconcursos\views\view\tmpl\index.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_doriaconcursos\views\view\tmpl\temp.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_doriaconcursos\views\view\tmpl\temp_modal_adicionar.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_doriaconcursos\views\view\view.html.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_jajaconsig\assets\js\ViewModels\ViewModel\ViewModel.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_jajaconsig\business\business.php" />
+    <Content Include="Templates\joomla_knockout\admin\component_jajaconsig\business\businessBasic.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_jajaconsig\controllers\controllers.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_jajaconsig\entity\entity.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_jajaconsig\entity\filter\filter.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_jajaconsig\tables\table.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_jajaconsig\views\view\index.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_jajaconsig\views\view\tmpl\index.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_jajaconsig\views\view\tmpl\temp.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_jajaconsig\views\view\tmpl\temp_modal_adicionar.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_jajaconsig\views\view\view.html.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_dga\assets\js\ViewModels\ViewModel\ViewModel.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_dga\business\business.php" />
+    <Content Include="Templates\joomla_knockout\admin\component_dga\business\businessBasic.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_dga\controllers\controllers.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_dga\entity\entity.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_dga\entity\filter\filter.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_dga\tables\table.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_dga\views\view\index.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_dga\views\view\tmpl\index.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_dga\views\view\tmpl\temp.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_dga\views\view\tmpl\temp_modal_adicionar.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_dga\views\view\view.html.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_savc\assets\js\ViewModels\ViewModel\ViewModel.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_savc\business\business.php" />
+    <Content Include="Templates\joomla_knockout\admin\component_savc\business\businessBasic.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_savc\controllers\controllers.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_savc\entity\entity.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_savc\entity\filter\filter.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_savc\tables\table.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_savc\views\view\index.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_savc\views\view\tmpl\index.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_savc\views\view\tmpl\temp.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_savc\views\view\tmpl\temp_modal_adicionar.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_savc\views\view\view.html.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_grupojovem\assets\js\ViewModels\ViewModel\ViewModel.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_grupojovem\business\business.php" />
+    <Content Include="Templates\joomla_knockout\admin\component_grupojovem\business\businessBasic.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_grupojovem\controllers\controllers.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_grupojovem\entity\entity.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_grupojovem\entity\filter\filter.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_grupojovem\tables\table.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_grupojovem\views\view\index.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_grupojovem\views\view\tmpl\index.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_grupojovem\views\view\tmpl\temp.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_grupojovem\views\view\tmpl\temp_modal_adicionar.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component_grupojovem\views\view\view.html.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component\assets\js\ViewModels\ViewModel\ViewModel.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component\business\businessBasic.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component\business\business.php" />
+    <Content Include="Templates\joomla_knockout\admin\component\controllers\controllers.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component\entity\entity.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component\entity\filter\filter.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component\tables\table.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component\views\view\index.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component\views\view\tmpl\index.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component\views\view\tmpl\temp_modal_adicionar.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component\views\view\tmpl\temp.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_knockout\admin\component\views\view\view.html.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\joomla_normal\admin\com_hotel\controllers\edit.php" />
+    <Content Include="Templates\joomla_normal\admin\com_hotel\controllers\show.php" />
+    <Content Include="Templates\joomla_normal\admin\com_hotel\models\edit.php" />
+    <Content Include="Templates\joomla_normal\admin\com_hotel\models\forms\forms.xml" />
+    <Content Include="Templates\joomla_normal\admin\com_hotel\models\show.php" />
+    <Content Include="Templates\joomla_normal\admin\com_hotel\tables\table.php" />
+    <Content Include="Templates\joomla_normal\admin\com_hotel\views\edit\edit.php" />
+    <Content Include="Templates\joomla_normal\admin\com_hotel\views\edit\index.html" />
+    <Content Include="Templates\joomla_normal\admin\com_hotel\views\edit\tmpl\edit.php" />
+    <Content Include="Templates\joomla_normal\admin\com_hotel\views\edit\tmpl\index.html" />
+    <Content Include="Templates\joomla_normal\admin\com_hotel\views\show\index.html" />
+    <Content Include="Templates\joomla_normal\admin\com_hotel\views\show\show.php" />
+    <Content Include="Templates\joomla_normal\admin\com_hotel\views\show\tmpl\index.html" />
+    <Content Include="Templates\joomla_normal\admin\com_hotel\views\show\tmpl\show.php" />
+    <Content Include="Templates\uninstall.mysql.utf8.sql" />
+    <Content Include="Templates\xmls\config_extensao.xml" />
+    <Content Include="Templates\xmls\hotel_funcionarios_fun.xml" />
+    <Content Include="Templates\xmls\hotel_pessoas_pes.xml" />
+    <Content Include="Templates\xmls\JoomlaTemplateXMLScripts.xml" />
+    <Content Include="Templates\xmls\JoomlaTemplateXMLPackageNew.xml" />
+    <Content Include="Templates\xmls\usergroups.xml" />
+    <Content Include="Templates\xmls\JoomlaTemplateXML.xml" />
+    <Content Include="Templates\xmls\users.xml" />
+    <Content Include="Templates\xmls\user_usergroup_map.xml" />
+    <None Include="Resources\publish.png" />
+    <None Include="Libs\Scintilla176_Custom.zip" />
+    <None Include="Libs\ScintillaNET 2.2 Standalone Source.zip" />
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\DataSources\DBTools.forms.frmJoomlaPacoteInstalacao.datasource" />
+    <None Include="Properties\DataSources\JModule.datasource" />
+    <None Include="Properties\DataSources\JoomlaInstall.datasource" />
+    <None Include="Resources\joomla16x16.ico" />
+    <None Include="Imagens\edit-lowercase.png" />
+    <None Include="Imagens\edit-uppercase.png" />
+    <None Include="Resources\WindowsScriptHst.ico" />
+    <None Include="Imagens\text_outdent.gif" />
+    <None Include="Imagens\text_indent.gif" />
+    <None Include="Imagens\decrease_indent.png" />
+    <None Include="Resources\paste.ico" />
+    <None Include="Resources\no_comment.ico" />
+    <None Include="Resources\comment.ico" />
+    <None Include="Resources\PropertiesC#.ico" />
+    <None Include="app.config" />
+    <None Include="Resources\tables_rows_delete.ico" />
+    <None Include="Resources\fontcolor.ico" />
+    <None Include="Resources\fill_color.ico" />
+    <None Include="Resources\webrefrence_search.ico" />
+    <None Include="Resources\searchweb.ico" />
+    <None Include="Resources\webrefrence.ico" />
+    <None Include="Resources\ClipBoard16x16.ico" />
+    <None Include="Resources\QuickReplace.ico" />
+    <None Include="Resources\tables_row_edit.ico" />
+    <None Include="Resources\Excel2003File16x16_wizard.ico" />
+    <None Include="Resources\sp_2005_ok.ico" />
+    <None Include="Resources\userSmall_association.ico" />
+    <None Include="Resources\HtmlPage.ico" />
+    <None Include="Resources\bloco_de_notas16x16.ico" />
+    <None Include="Resources\filtro4.ico" />
+    <None Include="Resources\saveico_edit.ico" />
+    <None Include="Resources\saveico.ico" />
+    <None Include="DBTools_TemporaryKey.pfx" />
+    <None Include="Resources\propriedade_find.ico" />
+    <None Include="Resources\propriedade.ico" />
+    <None Include="Resources\timer.ico" />
+    <None Include="Resources\execute_tables.ico" />
+    <None Include="Resources\grafico_plot.ico" />
+    <None Include="Resources\ChartPie16x16.ico" />
+    <None Include="Resources\GRAPH07.ICO" />
+    <None Include="Resources\Struct_proccess.ico" />
+    <None Include="Resources\sp_2005_run.ico" />
+    <None Include="Resources\CSarpFile_metthod.ico" />
+    <None Include="Resources\open_file.ico" />
+    <None Include="Resources\form2005.ico" />
+    <None Include="Resources\view_2005.ico" />
+    <None Include="Resources\tables1.ico" />
+    <None Include="Resources\sp_find.ico" />
+    <None Include="Resources\DataSet.ico" />
+    <None Include="Resources\Method.ico" />
+    <None Include="Resources\XMLDocument.ico" />
+    <None Include="Resources\XLSFile.ico" />
+    <None Include="Resources\Struct.ico" />
+    <None Include="Resources\Enum.ico" />
+    <None Include="Resources\EnumTable.ico" />
+    <None Include="Resources\sp_2005_gerar.ico" />
+    <None Include="Resources\AttachProccess1.ico" />
+    <None Include="Resources\Find16x16.ico" />
+    <None Include="Resources\find_tables.ico" />
+    <None Include="Resources\IE716x16.ico" />
+    <None Include="Resources\error_list.ico" />
+    <None Include="Resources\AttachProccess.ico" />
+    <None Include="Resources\refreshSQL2005.ico" />
+    <None Include="Resources\list.ico" />
+    <None Include="Resources\execute.ico" />
+    <None Include="Resources\database2005Express.ico" />
+    <None Include="Resources\searchTable.ico" />
+    <None Include="Resources\CopySmall.ico" />
+    <None Include="Resources\sp_2005.ico" />
+    <None Include="Resources\formClose.ico" />
+    <None Include="Resources\properties.ico" />
+    <None Include="Resources\refresh20051.ico" />
+    <None Include="Resources\combobox.ico" />
+    <None Include="Resources\database_desconnect.ico" />
+    <None Include="Resources\database_connect.ico" />
+    <None Include="Resources\database_on.ico" />
+    <None Include="Resources\IndexSmall.ico" />
+    <None Include="Resources\UsersSmall.ico" />
+    <None Include="Resources\servers2005.ico" />
+    <None Include="Resources\wizard16x16.ico" />
+    <None Include="Resources\FindInFiles.ico" />
+    <None Include="Resources\treeview.ico" />
+    <None Include="Resources\code.ico" />
+    <None Include="Resources\excel16x16.ico" />
+    <None Include="Resources\run.ico" />
+    <None Include="Resources\shell32_dll_Ico88_ico_Ico1.ico" />
+    <None Include="Resources\EmptySmall.ico" />
+    <None Include="Resources\refresh2005.ico" />
+    <None Include="Resources\sqlservertools.ico" />
+    <None Include="Resources\Decline.ico" />
+    <None Include="Resources\ARW07DN1.ICO" />
+    <None Include="Resources\ARW07UP1.ICO" />
+    <None Include="Resources\ARW07DN.ICO" />
+    <None Include="Resources\ARW07UP.ICO" />
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\AutoCompleteClass.cs" />
+    <Compile Include="classes\AutoCompleteIDE.cs" />
+    <Compile Include="classes\ConvertDataTypesClass.cs" />
+    <Compile Include="classes\CryptographyClass.cs" />
+    <Compile Include="classes\SqlObjectsClass.cs" />
+    <Compile Include="classes\Objects.cs" />
+    <Compile Include="classes\IDataBaseObjects.cs" />
+    <Compile Include="classes\ObjectsDataBases.cs" />
+    <Compile Include="classes\ConnectionClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\MySqlConnectionClass.cs" />
+    <Compile Include="classes\MySqlObjectsClass.cs" />
+    <Compile Include="classes\IOClass.cs" />
+    <Compile Include="classes\RegistrosINI.cs" />
+    <Compile Include="classes\SQLSMOTools.cs" />
+    <Compile Include="classes\SqlServerObjectsClass.cs" />
+    <Compile Include="classes\WebServiceInvokerClass.cs" />
+    <Compile Include="forms\frmComandoSQL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmComandoSQL.Designer.cs">
+      <DependentUpon>frmComandoSQL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmConfiguracao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmConfiguracao.Designer.cs">
+      <DependentUpon>frmConfiguracao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmDeletarRegistrosDuplicados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmDeletarRegistrosDuplicados.Designer.cs">
+      <DependentUpon>frmDeletarRegistrosDuplicados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmFindInSPs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmFindInSPs.Designer.cs">
+      <DependentUpon>frmFindInSPs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmFunction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmFunction.Designer.cs">
+      <DependentUpon>frmFunction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmGerenciadorWebService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmGerenciadorWebService.Designer.cs">
+      <DependentUpon>frmGerenciadorWebService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmImportExcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmImportExcel.Designer.cs">
+      <DependentUpon>frmImportExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmJoomlaKnockout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmJoomlaKnockout.Designer.cs">
+      <DependentUpon>frmJoomlaKnockout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmJoomlaCriarSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmJoomlaCriarSelect.Designer.cs">
+      <DependentUpon>frmJoomlaCriarSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmJoomla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmJoomla.Designer.cs">
+      <DependentUpon>frmJoomla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmListGroupQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmListGroupQuery.Designer.cs">
+      <DependentUpon>frmListGroupQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmServerExplorer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmServerExplorer.Designer.cs">
+      <DependentUpon>frmServerExplorer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmLogon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmLogon.Designer.cs">
+      <DependentUpon>frmLogon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmPesquisa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmPesquisa.Designer.cs">
+      <DependentUpon>frmPesquisa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmShowExcelSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmShowExcelSelection.designer.cs">
+      <DependentUpon>frmShowExcelSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmSQLEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmSQLEditor.Designer.cs">
+      <DependentUpon>frmSQLEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmSQLKeyValue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmSQLKeyValue.Designer.cs">
+      <DependentUpon>frmSQLKeyValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmTablesRowsCount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmTablesRowsCount.Designer.cs">
+      <DependentUpon>frmTablesRowsCount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmTemplateFormConsultaHelpDesk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmTemplateFormConsultaHelpDesk.Designer.cs">
+      <DependentUpon>frmTemplateFormConsultaHelpDesk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmVisualizarSPView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmVisualizarSPView.Designer.cs">
+      <DependentUpon>frmVisualizarSPView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\graficos\frmGraficoPlot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\graficos\frmGraficoPlot.Designer.cs">
+      <DependentUpon>frmGraficoPlot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\graficos\frmGraficoPizza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\graficos\frmGraficoPizza.Designer.cs">
+      <DependentUpon>frmGraficoPizza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="classes\Funcoes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\GetSql.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Templates\Templates.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Templates.resx</DependentUpon>
+    </Compile>
+    <Content Include="Templates\xmls\JoomlaScript.txt" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="classes\SpParameter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="forms\frmComandoSQL.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmComandoSQL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmConfiguracao.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConfiguracao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmDeletarRegistrosDuplicados.resx">
+      <DependentUpon>frmDeletarRegistrosDuplicados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmFindInSPs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmFindInSPs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmFunction.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmFunction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmGerenciadorWebService.resx">
+      <DependentUpon>frmGerenciadorWebService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmImportExcel.resx">
+      <DependentUpon>frmImportExcel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmAPIWiz.resx">
+      <DependentUpon>frmAPIWiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmJoomlaKnockout.resx">
+      <DependentUpon>frmJoomlaKnockout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmJoomlaCriarSelect.resx">
+      <DependentUpon>frmJoomlaCriarSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmJoomla.resx">
+      <DependentUpon>frmJoomla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmJoomlaPacoteInstalacao.resx">
+      <DependentUpon>frmJoomlaPacoteInstalacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmJoomlaXMLToScript.resx">
+      <DependentUpon>frmJoomlaXMLToScript.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmListGroupQuery.resx">
+      <DependentUpon>frmListGroupQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmServerExplorer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmServerExplorer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmLogon.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLogon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmPesquisa.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPesquisa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmShowExcelSelection.resx">
+      <DependentUpon>frmShowExcelSelection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmSQLEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSQLEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmSQLKeyValue.resx">
+      <DependentUpon>frmSQLKeyValue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmTablesRowsCount.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmTablesRowsCount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmTemplateFormConsultaHelpDesk.resx">
+      <DependentUpon>frmTemplateFormConsultaHelpDesk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmVisualizarSPView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmVisualizarSPView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\graficos\frmGraficoPlot.resx">
+      <DependentUpon>frmGraficoPlot.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\graficos\frmGraficoPizza.resx">
+      <DependentUpon>frmGraficoPizza.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmComando.resx">
+      <DependentUpon>frmComando.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExecSP.resx">
+      <DependentUpon>frmExecSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowExcelSelection.resx">
+      <DependentUpon>frmShowExcelSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Templates.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Templates.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Private>True</Private>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <Private>True</Private>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Microsoft.Office.Interop.Excel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="office">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="stdole">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Templates\joomla_normal\site\" />
+    <Folder Include="Templates\Wiz\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>

@@ -1,0 +1,151 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Config" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Config">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Label" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="XML" type="xs:string" minOccurs="0" />
+                <xs:element name="KeyValue" type="xs:string" minOccurs="0" />
+                <xs:element name="QueryJoin" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Config>
+    <Name>id</Name>
+    <Label>Id</Label>
+    <Type>PrimaryKey</Type>
+    <XML>&lt;input type="text" class="form-control" maxlength="0" data-bind="value: id" data-rule-required="true" data-msg-required=""&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+  <Config>
+    <Name>name</Name>
+    <Label>Name</Label>
+    <Type>Text</Type>
+    <XML>&lt;?php echo JHtmlPlus::TextBoxControl('name',255, null, null, null, true, "")?&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+  <Config>
+    <Name>username</Name>
+    <Label>Username</Label>
+    <Type>Text</Type>
+    <XML>&lt;?php echo JHtmlPlus::TextBoxControl('username',150, null, null, null, true, "")?&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+  <Config>
+    <Name>email</Name>
+    <Label>Email</Label>
+    <Type>Text</Type>
+    <XML>&lt;?php echo JHtmlPlus::TextBoxControl('email',100, null, null, null, true, "")?&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+  <Config>
+    <Name>password</Name>
+    <Label>Password</Label>
+    <Type>Text</Type>
+    <XML>&lt;?php echo JHtmlPlus::TextBoxControl('password',100, null, null, null, true, "")?&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+  <Config>
+    <Name>block</Name>
+    <Label>Block</Label>
+    <Type>CheckBox</Type>
+    <XML>&lt;?php echo JHtmlPlus::BooleanControl('block'); ?&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+  <Config>
+    <Name>sendEmail</Name>
+    <Label>SendEmail</Label>
+    <Type>CheckBox</Type>
+    <XML>&lt;?php echo JHtmlPlus::BooleanControl('sendEmail'); ?&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+  <Config>
+    <Name>registerDate</Name>
+    <Label>RegisterDate</Label>
+    <Type>Datepicker</Type>
+    <XML>&lt;?php echo JHtmlPlus::DatepickerControl('registerDate');?&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+  <Config>
+    <Name>lastvisitDate</Name>
+    <Label>LastvisitDate</Label>
+    <Type>Datepicker</Type>
+    <XML>&lt;?php echo JHtmlPlus::DatepickerControl('lastvisitDate');?&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+  <Config>
+    <Name>activation</Name>
+    <Label>Activation</Label>
+    <Type>Text</Type>
+    <XML>&lt;?php echo JHtmlPlus::TextBoxControl('activation',100, null, null, null, true, "")?&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+  <Config>
+    <Name>params</Name>
+    <Label>Params</Label>
+    <Type>Text</Type>
+    <XML>&lt;?php echo JHtmlPlus::TextBoxControl('params',65535, null, null, null, true, "")?&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+  <Config>
+    <Name>lastResetTime</Name>
+    <Label>LastResetTime</Label>
+    <Type>Datepicker</Type>
+    <XML>&lt;?php echo JHtmlPlus::DatepickerControl('lastResetTime');?&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+  <Config>
+    <Name>resetCount</Name>
+    <Label>ResetCount</Label>
+    <Type>Text</Type>
+    <XML>&lt;?php echo JHtmlPlus::TextBoxControl('resetCount',0, null, null, null, true, "")?&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+  <Config>
+    <Name>otpKey</Name>
+    <Label>OtpKey</Label>
+    <Type>Text</Type>
+    <XML>&lt;?php echo JHtmlPlus::TextBoxControl('otpKey',1000, null, null, null, true, "")?&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+  <Config>
+    <Name>otep</Name>
+    <Label>Otep</Label>
+    <Type>Text</Type>
+    <XML>&lt;?php echo JHtmlPlus::TextBoxControl('otep',1000, null, null, null, true, "")?&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+  <Config>
+    <Name>requireReset</Name>
+    <Label>RequireReset</Label>
+    <Type>CheckBox</Type>
+    <XML>&lt;?php echo JHtmlPlus::BooleanControl('requireReset'); ?&gt;</XML>
+    <KeyValue xml:space="preserve"> </KeyValue>
+    <QueryJoin xml:space="preserve"> </QueryJoin>
+  </Config>
+</NewDataSet>

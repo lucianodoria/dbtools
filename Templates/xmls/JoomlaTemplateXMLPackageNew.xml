@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<extension type="package" version="3.0" method="{Method}">
+  <name>{Name}</name>
+  <packagename>{Packagename}</packagename>
+  <creationDate>{CreationDate}</creationDate>
+  <author>Doria TI</author>
+  <copyright>(C) {CopyrightAno}</copyright>
+  <license>Comercial</license>
+  <authorEmail>contato@doriati.com.br</authorEmail>
+  <authorUrl>https://www.doriati.com.br</authorUrl>
+  <version>{Version}</version>
+  <packager>Doria TI</packager>
+  <packagerurl>contato@doriati.com.br</packagerurl>
+  <description>{PackageDescription}</description>
+  <blockChildUninstall>true</blockChildUninstall>
+  <files folder="packages">
+    <file type="component" id="{NameExtension}">{NameExtension}.zip</file>
+    {Modules}
+    {Templates}
+  </files>
+</extension>
